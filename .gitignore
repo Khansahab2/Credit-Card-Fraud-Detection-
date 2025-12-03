@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+*.ipynb
+dataset.csv
+fraud_detection/dataset.csv
+.DS_Store

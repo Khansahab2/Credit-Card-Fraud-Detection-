@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Fraud Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="shine">💳 Credit Card Fraud Detection</h1>
+    <form action="/predict" method="POST" class="form-box">
+      <input type="text" name="cc_num" placeholder="Card Number" required>
+      <input type="text" name="merchant" placeholder="Merchant" required>
+      <input type="text" name="category" placeholder="Category" required>
+      <input type="number" step="0.01" name="amt" placeholder="Amount" required>
+      <input type="text" name="gender" placeholder="Gender" required>
+      <input type="text" name="job" placeholder="Job" required>
+      <input type="number" name="unix_time" placeholder="Unix Time" required>
+      <input type="number" step="0.01" name="merch_lat" placeholder="Merchant Latitude" required>
+      <input type="number" name="hour" placeholder="Hour" required>
+      <input type="number" name="day" placeholder="Day" required>
+      <input type="number" name="month" placeholder="Month" required>
+
+      <button type="submit" class="btn-shine">Predict</button>
+    </form>
+  </div>
+</body>
+</html>
